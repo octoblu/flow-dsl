@@ -6,19 +6,11 @@ debug          = require('debug')('flow-dsl')
 MESSAGE_SCHEMA =
   type: 'object'
   properties:
-    exampleBoolean:
-      type: 'boolean'
-      required: true
-    exampleString:
+    dsl:
       type: 'string'
       required: true
 
-OPTIONS_SCHEMA =
-  type: 'object'
-  properties:
-    firstExampleOption:
-      type: 'string'
-      required: true
+OPTIONS_SCHEMA = {}
 
 class Plugin extends EventEmitter
   constructor: ->

@@ -1,0 +1,61 @@
+[
+  {
+    "_id": "53c9b82ff400e177dca325a4",
+    "category": "device",
+    "description": "Belkin Wemo home automation",
+    "helpText": "A series of products from Belkin International, Inc. that allows users to control home electronics from anywhere.",
+    "enabled": true,
+    "name": "Belkin Wemo",
+    "skynet": {
+      "type": "device",
+      "subtype": "wemo"
+    },
+    "connector": "meshblu-wemo",
+    "type": "device:wemo"
+  },
+  {
+    "_id": "53c9b839f400e177dca325c7",
+    "category": "channel",
+    "description": "",
+    "helpText": "An online social networking service that enables users to send and read short 140-character messages called \"tweets\".",
+    "enabled": true,
+    "name": "Twitter",
+    "skynet": {
+      "type": "channel",
+      "subtype": "Twitter"
+    },
+    "channelid": "5409f79403f1d8b163401370",
+    "type": "channel:twitter"
+  },
+  {
+    "name": "Trigger",
+    "class": "trigger",
+    "helpText": "Send a static message. Can also be triggered from other flows",
+    "category": "operation",
+    "uuid": "37f0a74a-2f17-11e4-9617-a6c5e4d22fb7",
+    "type": "operation:trigger",
+    "defaults": {
+      "payloadType": "date",
+      "once": false
+    },
+    "input": 0,
+    "output": 1,
+    "formTemplatePath": "/pages/node_forms/button_form.html"
+  },
+  {
+    "name": "Interval",
+    "class": "interval",
+    "helpText": "Emit a message at the specified interval.<br> ```{ \"on\": true || false, \"repeat\": 1000 } ```",
+    "category": "operation",
+    "uuid": "37f0a966-2f17-11e4-9617-a6c5e4d22fb7",
+    "type": "operation:interval",
+    "defaults": {
+      "payloadType": "date",
+      "repeat": 1000,
+      "on": true
+    },
+    "input": 1,
+    "output": 1,
+    "formTemplatePath": "/pages/node_forms/interval_form.html"
+  }
+]

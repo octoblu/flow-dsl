@@ -8,8 +8,8 @@ class DSLToFlow
     @uuid = dependencies.uuid ? require 'node-uuid'
 
   calculatePosition: (node, index) =>
-    node.x = 300 * index
-    node.y = 0
+    node.x = 300 * index + 1
+    node.y = 1
     node
 
   convertToFlow: (dslFlow={}) =>
